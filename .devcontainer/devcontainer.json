@@ -8,7 +8,7 @@
     "workspaceFolder": "/workspace",
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [5000, 5001],
+	"forwardPorts": [5000, 5001],
 
 	"features": {
 		"common": {
@@ -34,7 +34,20 @@
 		"editor.guides.bracketPairs": "active",
 
 		"scm.defaultViewMode": "tree",
-		"debug.internalConsoleOptions": "neverOpen"
+		"debug.internalConsoleOptions": "neverOpen",
+
+		"eslint.validate": [
+			"javascript",
+			"typescript"
+		],
+		"eslint.workingDirectories": [
+			{
+				"directory": "./test-project",
+				"changeProcessCWD": true
+			}
+		],
+		"liveServer.settings.NoBrowser": true,
+		"liveServer.settings.port": 5000
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
@@ -46,6 +59,13 @@
 		"visualstudiotxptteam.vscodeintellicode-completions",
 
 		"ms-azuretools.vscode-docker",
+
+		"dbaeumer.vscode-eslint",
+		"christian-kohler.npm-intellisense",
+		"eg2.vscode-npm-script",
+		
+		"ritwickdey.liveserver",
+		"ritwickdey.live-sass",
 
 		"ms-vscode.wordcount",
 		"editorconfig.editorconfig",
