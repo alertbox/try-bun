@@ -1,4 +1,4 @@
-# Try out Bun
+# Tryout Bun
 
 [<img align="right" alt="Bun, a JS/TS runtime" width="128rem" src="https://camo.githubusercontent.com/cc7b5924f05d4f0743ce6d7969405545cb997e58dec5f9d5f8718011c7d446ae/68747470733a2f2f62756e2e73682f6c6f676f4032782e706e67"  />](https://bun.sh)
 
@@ -8,14 +8,14 @@ A template repository for trying out [bun, an incredibly faster JS runtime](http
 
 ### What's in it:
 
-- Bun runtime
-  > [Learn more about all-in-one bun](https://bun.sh)
+- `bun` CLI with runtime
+  > [Learn more about bun](https://github.com/apvarun/awesome-bun#videos)
 - `git` and `gh` CLI for versioning
 - `zsh` integrated terminal for shell scripting
 - VS Code extensions for JS/TS and other related work
 - `docker` CLI with compose v2
 
-## Use This Template
+## Using This Template
 
 Using this template repo is easy as [creating a new repo](https://github.com/kosalanuwan/vscode-remote-try-bun/generate) on GitHub.
 
@@ -23,16 +23,10 @@ Using this template repo is easy as [creating a new repo](https://github.com/kos
 
 Once you have this code opened, you'll be able to work with it like you would locally.
 
-- Open VS Code Terminal window
-- Enter `bun run test-project/http.js`
-  > VS Code will prompt to open your favorite browser to show the result.
-
-## Learning Resources
-
-- See the [Bun's Getting started section](https://bun.sh/#getting-started) for a quickie.
-- See the [Bun's documentation](https://github.com/Jarred-Sumner/bun#Reference) for full-blown instructions
-- See the [examples](https://github.com/Jarred-Sumner/bun/tree/main/examples) for next and react code snippets
-- Watch [Sean Walker's Checking out bun video](https://youtu.be/JrVzHq4l5us) for a live coding session
+With VS Code:
+- Open New Terminal
+- Type `bun run test-project/http.js`
+  > VS Code will prompt to open your favorite browser to show the output.
 
 ## Feedback
 
