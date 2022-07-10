@@ -1,23 +1,24 @@
-# Tryout Bun
+# Try Out Bun (JavaScript/TypeScript) 
 
-[<img align="right" alt="Bun, a JS/TS runtime" width="128rem" src="https://camo.githubusercontent.com/cc7b5924f05d4f0743ce6d7969405545cb997e58dec5f9d5f8718011c7d446ae/68747470733a2f2f62756e2e73682f6c6f676f4032782e706e67"  />](https://bun.sh)
+[<img align="right" alt="Bun, an incredibly faster all-in-one JS/TS runtime" width="128rem" src="https://camo.githubusercontent.com/cc7b5924f05d4f0743ce6d7969405545cb997e58dec5f9d5f8718011c7d446ae/68747470733a2f2f62756e2e73682f6c6f676f4032782e706e67"  />](https://bun.sh)
 
-A template repository for trying out [bun, an incredibly faster JS runtime](https://bun.sh), on development containers with [GitHub Codespaces or VS Code - Remote Containers locally](https://github.com/microsoft/vscode-dev-containers/#readme).
+This template repository serves as a flavor of quick starter for trying out [bun, an incredibly faster all-in-one JavaScript runtime](https://bun.sh).
 
-> If you already have a dev container, you can jump to the [Things to try](#things-to-try) section.
+> If you already have a [dev container](https://github.com/microsoft/vscode-dev-containers), you can jump to the [Things to try](#things-to-try) section.
 
 ### What's in it:
 
-- `bun` CLI with runtime
-  > [Learn more about bun](https://github.com/apvarun/awesome-bun#videos)
+- `bun` latest binaries
+  > [awesome-bun](https://github.com/apvarun/awesome-bun#videos) is a good source to learn more.
+- Built for GitHub Codespaces and VS Code Remote - Containers
+- VS Code extensions for JS/TS and other related work
 - `git` and `gh` CLI for versioning
 - `zsh` integrated terminal for shell scripting
-- VS Code extensions for JS/TS and other related work
 - `docker` CLI with compose v2
 
 ## Using This Template
 
-Using this template repo is easy as [creating a new repo](https://github.com/kosalanuwan/vscode-remote-try-bun/generate) on GitHub.
+Using this repo is easy as cloning the repo. Just click on [Use This Template](https://github.com/kosalanuwan/vscode-remote-try-bun/generate) and you are good to go.
 
 ## Things to Try
 
@@ -25,7 +26,7 @@ Once you have this code opened, you'll be able to work with it like you would lo
 
 With VS Code:
 - Open New Terminal
-- Type `bun run test-project/http.js`
+- Type `bun run test-project/server.js`
   > VS Code will prompt to open your favorite browser to show the output.
 
 ## Feedback
