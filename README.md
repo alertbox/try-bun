@@ -18,6 +18,7 @@ This template repo serves as a flavor of quick-starter to develop JS/TS-based we
 - Docker CLI with Compose v2
 
 [bun-homepage]: https://bun.sh
+[gh-codespaces-quickstart]: https://docs.github.com/en/codespaces/getting-started/quickstart
 [awesome-list-bun]: https://github.com/apvarun/awesome-bun#videos
 [gh-bun-discussion-windows-support]: https://github.com/oven-sh/bun/discussions/361#discussioncomment-3118535
 
