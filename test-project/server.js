@@ -1,5 +1,5 @@
 // server.js
-const PORT = 5000;
+const PORT = 3000;
 
 export default {
     port: PORT,
