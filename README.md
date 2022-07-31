@@ -1,6 +1,6 @@
 # Tryout Bun - all-in-one JS runtime
 
-[<img align="right" alt="Bun, an incredibly faster all-in-one JS/TS runtime" width="128rem" src="https://camo.githubusercontent.com/cc7b5924f05d4f0743ce6d7969405545cb997e58dec5f9d5f8718011c7d446ae/68747470733a2f2f62756e2e73682f6c6f676f4032782e706e67" />][bun-homepage]
+[<img align="right" alt="Bun, an incredibly faster all-in-one JS/TS runtime" width="128rem" src="https://camo.githubusercontent.com/cc7b5924f05d4f0743ce6d7969405545cb997e58dec5f9d5f8718011c7d446ae/68747470733a2f2f62756e2e73682f6c6f676f4032782e706e67" />][bun-site]
 
 This template repo serves as a flavor of linux-based quick-starter development container for use with [VS Code Remote - Containers][vscode-dev-containers-quickstart] and [GitHub Codespaces][gh-codespaces-quickstart].
 
@@ -8,7 +8,6 @@ This template repo serves as a flavor of linux-based quick-starter development c
 
 [vscode-dev-containers-quickstart]: https://www.youtube.com/playlist?list=PLj6YeMhvp2S5G_X6ZyMc8gfXPMFPg3O31
 [gh-codespaces-quickstart]: https://docs.github.com/en/codespaces/getting-started/quickstart
-
 [gh-bun-discussion-win-support]: https://github.com/oven-sh/bun/discussions/361#discussioncomment-3118535
 
 
