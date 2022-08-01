@@ -30,7 +30,7 @@ If you are completely new to bun, [Awesome Bun][awesome-list-bun] is a good sour
 
 Next, you want to create a copy of this template. It is easy as forking. The repo is marked as a `Template` so you will only have to [Use This Template][gh-use-this] and follow the instructions.
 
-[awesome-list-bun]: https://github.com/apvarun/awesome-bun#videos
+[awesome-list-bun]: https://github.com/apvarun/awesome-bun#readme
 [gh-use-this]: https://github.com/kosalanuwan/vscode-remote-try-bun/generate
 
 
