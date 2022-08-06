@@ -2,9 +2,9 @@
 FROM --platform=linux/amd64 mcr.microsoft.com/vscode/devcontainers/base:dev-bullseye
 
 ENV BUN_INSTALL=/bun
-RUN mkdir -p /bun \
+RUN sudo mkdir -p ${BUN_INSTALL} \
     && curl -fsSL https://bun.sh/install | sh \
-    && chown -R vscode /bun
+    && chown -R ${USERNAME} /bun
 
 ENV PATH=${BUN_INSTALL}/bin:${PATH}
 
