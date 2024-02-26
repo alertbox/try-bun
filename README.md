@@ -1,70 +1,56 @@
-# Tryout Bun - all-in-one JS runtime
+<p align="center">
+  <a href="https://bun.sh"><img src="https://user-images.githubusercontent.com/709451/182802334-d9c42afe-f35d-4a7b-86ea-9985f73f20c3.png" alt="Bun logo" height=170></a>
+</p>
+<h1 align="center">Try Bun</h1>
 
-[<img align="right" alt="Bun, an incredibly faster all-in-one JS/TS runtime" width="128rem" src="https://camo.githubusercontent.com/cc7b5924f05d4f0743ce6d7969405545cb997e58dec5f9d5f8718011c7d446ae/68747470733a2f2f62756e2e73682f6c6f676f4032782e706e67" />][bun-site]
+Start a dev container and get to developing a [variety of JavaScript-based (or TypeScript) web apps and services][bun-guides].
 
-This template repo serves as a flavor of linux-based quick-starter development container for use with [VS Code Remote - Containers][vscode-dev-containers-quickstart] and [GitHub Codespaces][gh-codespaces-quickstart].
-
-> Originally, this dev container was created to [tryout bun without having to install it locally][gh-bun-discussion-win-support], especially on Windows.
-
-[vscode-dev-containers-quickstart]: https://www.youtube.com/playlist?list=PLj6YeMhvp2S5G_X6ZyMc8gfXPMFPg3O31
-[gh-codespaces-quickstart]: https://docs.github.com/en/codespaces/getting-started/quickstart
-[gh-bun-discussion-win-support]: https://github.com/oven-sh/bun/discussions/361#discussioncomment-3118535
+[bun-guides]: https://bun.sh/guides
 
 
+## Quick Start
 
-### What's in it:
+[![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Dev+Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/alertbox/try-bun)
 
-- [Bun][bun-site], all-in-one JS runtime latest binaries
-- [VS Code Extensions](/.devcontainer/devcontainer.json) for JS/TS and related work
-- Git and GitHub CLI for versioning
-- ZSH integrated Terminal
-- Docker CLI with Compose v2
+You can also run this repo locally by following these repetitive steps:
 
-[bun-site]: https://bun.sh
+1. You want to ensure the repo is cloned to your local machine, and
+2. Open it in VS Code.
 
 
 
-## Using This Template
+>  See [Bun Docker Images][bun-docker-images] for other variations that suites your hardware.
 
-If you are completely new to bun, [Awesome Bun][awesome-list-bun] is a good source to start with.
-
-Next, you want to create a copy of this template. It is easy as forking. The repo is marked as a `Template` so you will only have to [Use This Template][gh-use-this] and follow the instructions.
-
-[awesome-list-bun]: https://github.com/apvarun/awesome-bun#readme
-[gh-use-this]: https://github.com/kosalanuwan/vscode-remote-try-bun/generate
+[bun-docker-images]: https://hub.docker.com/r/oven/bun
 
 
 
-## Things to Try
+## Troubleshooting
 
-First, you want to ensure source code is Reopened in Container. Then you'll be able to work with it like you would locally.
+If you have any technical problems with dev containers, you are better off asking their [Discord Channel][discord-channel] directly, since you'll end up getting a much faster response back that way.
 
-With VS Code:
-- Open a new Terminal
-- Type `bun --version` to verify the version
-- Type `bun run test-project/server.js`
-  > Browse http://localhost:3000 on your favorite web browser to see the result.
+[discord-channel]: https://discord.com/invite/CXdq2DP29u
 
 
 
-## Feedback
+### Known Issues
 
-If you have any technical problems with Bun, you are better off asking [Bun's Discord community][bun-discord] directly, since you'll end up getting a much faster response back that way.
-
-[bun-discord]: https://bun.sh/discord
-
-
+- https://github.com/oven-sh/bun/issues/159
+- https://github.com/oven-sh/bun/issues/798
+- https://github.com/oven-sh/bun/issues/43
 
 ## Contributing
 
-The official repo to contribute would be  [@oven-sh/bun][gh-bun-repo].
+The official repo to contribute would be [@oven-sh/bun][bun-repo].
 
-[gh-bun-repo]: https://github.com/oven-sh/bun/#readme
+Have a suggestion or a bug fix? Just open a pull request or an issue. Include clear and simple instructions possible.
+
+[bun-repo]: https://github.com/oven-sh/bun?tab=readme-ov-file#readme
 
 
 
 ## License
 
-Copyright (c) Kosala Nuwan Perera. All rights reserved.
+Copyright &copy; Alertbox, Inc. (@alertbox). All rights reserved.
 
-The source code is license under the [MIT license](LICENSE).
+The source code is license under the [MIT license](#MIT-1-ov-file).
