@@ -1,84 +1,81 @@
 {
-	"name": "Bun (Bullseye)",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
-	
-    "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
-    "workspaceFolder": "/workspace",
-	
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [3000, 5000],
-
-	"features": {
-		"common": {
-			"username": "automatic",
-			"uid": "automatic",
-			"gid": "automatic",
-			"installZsh": true,
-			"upgradePackages": true
-		},
-		"docker-from-docker": {
-			"version": "latest",
-			"moby": false,
-			"dockerDashComposeVersion": "v2"
-    	},
-		"github-cli": "latest"
-	},
-
-	"settings": {
-		"workbench.colorTheme": "Visual Studio 2019 Dark",
-		"terminal.integrated.defaultProfile.linux": "zsh",
-		"editor.formatOnPaste": true,
-
-		"editor.guides.bracketPairs": "active",
-
-		"scm.defaultViewMode": "tree",
-		"debug.internalConsoleOptions": "neverOpen",
-
-		"eslint.validate": [
-			"javascript",
-			"typescript"
-		],
-		"eslint.workingDirectories": [
-			{
-				"directory": "./test-project",
-				"changeProcessCWD": true
-			}
-		],
-		"liveServer.settings.NoBrowser": true,
-		"liveServer.settings.port": 5000
-	},
-
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"humao.rest-client",
-		"github.vscode-pull-request-github",
-
-		"visualstudioexptteam.vscodeintellicode",
-		"visualstudiotxptteam.vscodeintellicode-completions",
-
-		"ms-azuretools.vscode-docker",
-
-		"dbaeumer.vscode-eslint",
-		"christian-kohler.npm-intellisense",
-		"eg2.vscode-npm-script",
-		
-		"ritwickdey.liveserver",
-		"ritwickdey.live-sass",
-
-		"ms-vscode.wordcount",
-		"editorconfig.editorconfig",
-		"streetsidesoftware.code-spell-checker",
-		"redhat.fabric8-analytics",
-		"redhat.vscode-yaml",
-		"bierner.github-markdown-preview"
-	],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "zsh .devcontainer/post-create.zsh",
-	// "overrideCommand": false,
-
-	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+  "name": "Bun",
+  // See complete list https://hub.docker.com/r/oven/bun
+  "image": "oven/bun",
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
+    // Http
+    3000
+  ],
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  "remoteUser": "root",
+  // Add more features. See complete list https://github.com/devcontainers/features
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "moby": false,
+      "dockerDashComposeVersion": "v2"
+    }
+  },
+  "containerEnv": {},
+  "remoteEnv": {},
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        // JavaScript
+        "oven.bun-vscode",
+        // TypeScript
+        "bierner.lit-html",
+        "better-ts-errors.better-ts-errors",
+        "dbaeumer.vscode-eslint",
+        // Makefile
+        "ms-vscode.makefile-tools",
+        // Markdown
+        "bierner.markdown-preview-github-styles",
+        "bierner.markdown-emoji",
+        "bierner.markdown-checkbox",
+        "bierner.jsdoc-markdown-highlighting",
+        "ms-vscode.wordcount",
+        // TOML, YAML, et al.
+        "tamasfe.even-better-toml",
+        "redhat.vscode-yaml",
+        "editorconfig.editorconfig",
+        // Other
+        "albert.tabout",
+        "streetsidesoftware.code-spell-checker",
+        "bierner.comment-tagged-templates",
+        "ritwickdey.liveserver"
+      ],
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "debug.internalConsoleOptions": "neverOpen",
+        "editor.formatOnPaste": true,
+        "editor.guides.bracketPairs": "active",
+        "scm.defaultViewMode": "tree",
+        "diffEditor.diffAlgorithm": "advanced",
+        "diffEditor.experimental.showMoves": true,
+        "diffEditor.renderSideBySide": false,
+        "files.watcherExclude": {
+          "**/node_modules/**": true
+        },
+        // Prettifies the response with emojis and such.
+        "betterTypeScriptErrors.prettify": true
+      }
+    }
+  }
+  // Use 'updateContentCommand' to run commands after the container is successfully created.
+  // "updateContentCommand": {
+  //   "clean": "rm -rf **/node_modules"
+  // }
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": {
+  //   "restore": "bun install"
+  // }
 }
