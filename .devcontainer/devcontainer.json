@@ -33,7 +33,6 @@
         // TypeScript
         "bierner.lit-html",
         "better-ts-errors.better-ts-errors",
-        "dbaeumer.vscode-eslint",
         // Makefile
         "ms-vscode.makefile-tools",
         // Markdown
@@ -42,10 +41,6 @@
         "bierner.markdown-checkbox",
         "bierner.jsdoc-markdown-highlighting",
         "ms-vscode.wordcount",
-        // TOML, YAML, et al.
-        "tamasfe.even-better-toml",
-        "redhat.vscode-yaml",
-        "editorconfig.editorconfig",
         // Other
         "albert.tabout",
         "streetsidesoftware.code-spell-checker",
