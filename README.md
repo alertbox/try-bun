@@ -5,8 +5,9 @@
 
 Start a dev container and get to developing a [variety of JavaScript-based (or TypeScript) web apps and services][bun-guides].
 
-[bun-guides]: https://bun.sh/guides
+> Originally, this dev container was created to have an isolated development environment to install the pre-release versions on Windows. See [Known Issues](#known-issues) to learn more.
 
+[bun-guides]: https://bun.sh/guides
 
 ## Quick Start
 
@@ -35,9 +36,9 @@ If you have any technical problems with dev containers, you are better off askin
 
 ### Known Issues
 
-- https://github.com/oven-sh/bun/issues/159
-- https://github.com/oven-sh/bun/issues/798
-- https://github.com/oven-sh/bun/issues/43
+- [Bun's Roadmap @oven-sh/bun #159](https://github.com/oven-sh/bun/issues/159)
+- [Bun's priorities @oven-sh/bun #798](https://github.com/oven-sh/bun/issues/798)
+- [Windows Support @oven-sh/bun #43](https://github.com/oven-sh/bun/issues/43)
 
 ## Contributing
 

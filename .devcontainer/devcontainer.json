@@ -33,7 +33,6 @@
         // TypeScript
         "bierner.lit-html",
         "better-ts-errors.better-ts-errors",
-        "dbaeumer.vscode-eslint",
         // Makefile
         "ms-vscode.makefile-tools",
         // Markdown
@@ -42,15 +41,10 @@
         "bierner.markdown-checkbox",
         "bierner.jsdoc-markdown-highlighting",
         "ms-vscode.wordcount",
-        // TOML, YAML, et al.
-        "tamasfe.even-better-toml",
-        "redhat.vscode-yaml",
-        "editorconfig.editorconfig",
         // Other
         "albert.tabout",
         "streetsidesoftware.code-spell-checker",
         "bierner.comment-tagged-templates",
-        "ritwickdey.liveserver"
       ],
       // Set *default* container specific settings.json values on container create.
       "settings": {
@@ -69,13 +63,13 @@
         "betterTypeScriptErrors.prettify": true
       }
     }
-  }
+  },
   // Use 'updateContentCommand' to run commands after the container is successfully created.
   // "updateContentCommand": {
-  //   "clean": "rm -rf **/node_modules"
-  // }
+  //   "install_deno": "curl -fsSL https://deno.land/install.sh | sh",
+  // },
   // Use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": {
-  //   "restore": "bun install"
+  //   "restore": "bun run clean && bun install"
   // }
 }
