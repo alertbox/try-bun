@@ -5,7 +5,9 @@
 
 Start a dev container and get to developing a [variety of JavaScript-based (or TypeScript) web apps and services][bun-guides].
 
-> Originally, this dev container was created to have an isolated development environment to install the pre-release versions on Windows. See [Known Issues](#known-issues) to learn more.
+> [!Note]
+>
+> Originally, this dev container was created to have an isolated development environment to install the pre-release versions on WSL. See [Known Issues](#known-issues) to learn more.
 
 [bun-guides]: https://bun.sh/guides
 
@@ -18,21 +20,15 @@ You can also run this repo locally by following these repetitive steps:
 1. You want to ensure the repo is cloned to your local machine, and
 2. Open it in VS Code.
 
+See [Bun Releases][bun-releases] for other variations that suites your need.
 
-
->  See [Bun Docker Images][bun-docker-images] for other variations that suites your hardware.
-
-[bun-docker-images]: https://hub.docker.com/r/oven/bun
-
-
+[bun-releases]: https://github.com/oven-sh/bun/releases
 
 ## Troubleshooting
 
 If you have any technical problems with dev containers, you are better off asking their [Discord Channel][discord-channel] directly, since you'll end up getting a much faster response back that way.
 
 [discord-channel]: https://discord.com/invite/CXdq2DP29u
-
-
 
 ### Known Issues
 
@@ -48,10 +44,8 @@ Have a suggestion or a bug fix? Just open a pull request or an issue. Include cl
 
 [bun-repo]: https://github.com/oven-sh/bun?tab=readme-ov-file#readme
 
-
-
 ## License
 
-Copyright &copy; Alertbox, Inc. (@alertbox). All rights reserved.
+Copyright (c) Alertbox, Inc. (@alertbox). All rights reserved.
 
 The source code is license under the [MIT license](#MIT-1-ov-file).
