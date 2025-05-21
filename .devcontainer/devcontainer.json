@@ -1,7 +1,7 @@
 {
   "name": "Bun",
   // See complete list https://hub.docker.com/r/oven/bun
-  "image": "oven/bun",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
     // Http
@@ -18,7 +18,8 @@
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "moby": false,
       "dockerDashComposeVersion": "v2"
-    }
+    },
+    "ghcr.io/alertbox/devcontainer-features/bun:2": {},
   },
   "containerEnv": {},
   "remoteEnv": {},
@@ -28,8 +29,6 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        // JavaScript
-        "oven.bun-vscode",
         // TypeScript
         "bierner.lit-html",
         "better-ts-errors.better-ts-errors",
@@ -50,7 +49,6 @@
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
         "debug.internalConsoleOptions": "neverOpen",
-        "editor.formatOnPaste": true,
         "editor.guides.bracketPairs": "active",
         "scm.defaultViewMode": "tree",
         "diffEditor.diffAlgorithm": "advanced",
