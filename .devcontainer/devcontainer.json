@@ -19,7 +19,7 @@
       "moby": false,
       "dockerDashComposeVersion": "v2"
     },
-    "ghcr.io/alertbox/devcontainer-features/bun:2": {},
+    "ghcr.io/alertbox/dotcontainers/bun:0": {},
   },
   "containerEnv": {},
   "remoteEnv": {},
