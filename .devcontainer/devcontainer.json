@@ -19,7 +19,7 @@
       "moby": false,
       "dockerDashComposeVersion": "v2"
     },
-    "ghcr.io/alertbox/dotcontainers/bun:0": {},
+    "ghcr.io/alertbox/oven-sh/bun:1": {}
   },
   "containerEnv": {},
   "remoteEnv": {},
@@ -43,14 +43,12 @@
         // Other
         "albert.tabout",
         "streetsidesoftware.code-spell-checker",
-        "bierner.comment-tagged-templates",
+        "bierner.comment-tagged-templates"
       ],
       // Set *default* container specific settings.json values on container create.
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh",
         "debug.internalConsoleOptions": "neverOpen",
         "editor.guides.bracketPairs": "active",
-        "scm.defaultViewMode": "tree",
         "diffEditor.diffAlgorithm": "advanced",
         "diffEditor.experimental.showMoves": true,
         "diffEditor.renderSideBySide": false,
@@ -58,7 +56,9 @@
           "**/node_modules/**": true
         },
         // Prettifies the response with emojis and such.
-        "betterTypeScriptErrors.prettify": true
+        "betterTypeScriptErrors.prettify": true,
+        "scm.defaultViewMode": "tree",
+        "terminal.integrated.defaultProfile.linux": "zsh"
       }
     }
   },
